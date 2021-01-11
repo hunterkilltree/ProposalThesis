@@ -1,12 +1,27 @@
-# ProposalThesis
-Linux command, note, code test, setup environment 
+# ProposalThesis (Unbuntu 18.04 LTS)
+Linux command, note, code test, setup environment
 
+# Install RDP server called xrdp (remote use ) too slow
+sudo apt-get install xrdp
+
+Check
+nmap jetson
+
+
+Note: log out in physical and login in RDP app
+
+# Install NoMachine (ARM 8) (Using this )
+* Download deb file and install.
+
+# Install Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
 
 # Intall deb file
-sudo dpkg -i application.deb 
+sudo dpkg -i application.deb
 
-# Remove file and folder 
+# Remove file and folder
 #### Remove file
 
 #### Remove folder
@@ -26,7 +41,6 @@ sudo dpkg -i application.deb
 
 # Open Unity  Hub
 '''
-./UnityHub.AppImage 
+./UnityHub.AppImage
 '''
 Note: Unity version 2018.4.30f1
-
