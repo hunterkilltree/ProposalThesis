@@ -27,6 +27,11 @@ sudo dpkg -i application.deb
 #### Remove folder
 
 
+# Hardware testing
+#####  RFID
+
+##### TCR5000 line sensor
+
 # Run small warehouse on sim
 
 # Run medium warehouse on sim
