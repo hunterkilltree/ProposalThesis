@@ -71,6 +71,11 @@ check: ls /dev/tty* ; lsusb
 # Intall deb file
 sudo dpkg -i application.deb
 
+# Allow run .sh file
+chmod +x run.sh
+# Run sh file
+./run.sh
+
 # Remove file and folder
 #### Remove file
 
