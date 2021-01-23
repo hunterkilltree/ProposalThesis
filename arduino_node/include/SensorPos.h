@@ -40,15 +40,16 @@ String read_pos()
 
     if (!mfrc522.PICC_IsNewCardPresent())
     {
-        return "false";
+        return "";
     }
     // Select one of the cards
     if (!mfrc522.PICC_ReadCardSerial())
     {
-        return "false";
+        return "";
     }
 
-    String content = "";
+    String content = "P ";
+
 
     byte buffer1[18];
     block = 4;
@@ -87,5 +88,6 @@ String read_pos()
 
     mfrc522.PICC_HaltA();
     mfrc522.PCD_StopCrypto1();
+    content.concat(" #");
     return content; //content.toUpperCase();
 }
