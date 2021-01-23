@@ -117,12 +117,7 @@ void loop() {
     Serial.write(buffer2[i] );
   }
 
-
-  //----------------------------------------
-
-  Serial.println(F("\n**End Reading**\n"));
-
-  delay(1000); //change value if you want to read cards faster
+"\n**End Reading**\n"));
 
   mfrc522.PICC_HaltA();
   mfrc522.PCD_StopCrypto1();
