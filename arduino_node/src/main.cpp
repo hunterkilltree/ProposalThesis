@@ -58,25 +58,27 @@ void loop()
     }
   }
 
-  String all_sensor_value = "A";
-  String pos_value = "";
-  String line_value = "";
+  // String all_sensor_value = "A";
+  // String pos_value = "";
+  // String line_value = "";
 
-  pos_value = read_pos();
-  line_value = read_line();
+  // pos_value = read_pos();
+  // line_value = read_line();
 
-  // pos_value.remove(1); // remove /n
+  // // pos_value.remove(1); // remove /n
 
-  if (pos_value == "" )
-  {
-    pos_value = "P#";
-  }
-  if (line_value == "") {
-    line_value = "L#";
-  }
+  // if (pos_value == "" )
+  // {
+  //   pos_value = "P#";
+  // }
+  // if (line_value == "") {
+  //   line_value = "L#";
+  // }
 
-  all_sensor_value.concat(pos_value);
-  all_sensor_value.concat(line_value);
-  print_string(all_sensor_value);
+  // all_sensor_value.concat(pos_value);
+  // all_sensor_value.concat(line_value);
+  // print_string(all_sensor_value);
   // delay(50);
+
+  Serial.flush();
 }
